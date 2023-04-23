@@ -1,7 +1,7 @@
 package com.javatechie.controller;
 
 import com.javatechie.dto.Product;
-import com.javatechie.entity.UserInfo;
+//import com.javatechie.entity.UserInfo;
 import com.javatechie.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -21,10 +21,10 @@ public class ProductController {
         return "Welcome to Room management App!";
     }
 
-    @PostMapping("/new")
-    public String addNewUser(@RequestBody UserInfo userInfo){
-        return service.addUser(userInfo);
-    }
+//    @PostMapping("/new")
+//    public String addNewUser(@RequestBody UserInfo userInfo){
+//        return service.addUser(userInfo);
+//    }
 
     @GetMapping("/all")
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
