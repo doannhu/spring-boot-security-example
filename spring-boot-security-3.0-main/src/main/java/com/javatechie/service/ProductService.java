@@ -4,8 +4,8 @@ import com.javatechie.dto.Product;
 //import com.javatechie.entity.UserInfo;
 import com.javatechie.repository.UserInfoRepository;
 import jakarta.annotation.PostConstruct;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,11 +18,11 @@ public class ProductService {
 
     List<Product> productList = null;
 
-    @Autowired
-    private UserInfoRepository repository;
-
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+//    @Autowired
+//    private UserInfoRepository repository;
+//
+//    @Autowired
+//    private PasswordEncoder passwordEncoder;
 
     @PostConstruct
     public void loadProductsFromDB() {
